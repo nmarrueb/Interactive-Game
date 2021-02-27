@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title> Lottery Winner Simulator </title>
+		<link rel="icon" href="assets/moneybag.png" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		<script>
+			function inputController(){
+				if (input1.value == 'BITCOIN'){
+					parent.location='win.html';
+				}
+				else{
+					parent.location='lose.html';
+				}
+			}	
+		</script>	
+	</head>
+	<body class='background-green font-varela' id='id-selector'>
+		<h1>Confirm Your Investment</h1>
+		<p>
+			Type 'BITCOIN' (<i> case sensitive </i>) to confirm your reccuring monthly investment of 300k USD of bitcoin a month.
+		</p>
+		<div>
+			<label> Input Answer:</label>
+			<input type="text" id='input1'>
+			<input type="button" value='Submit' onClick="inputController()">
+		</div>
+	</body>
+</html>

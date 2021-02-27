@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title> Lottery Winner Simulator </title>
+		<link rel="icon" href="assets/moneybag.png" />
+		<link href='styles/styles.css' rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		<script>
+			function inputController(){
+				if(option3.checked){
+					parent.location='win.html';
+				}
+				else{
+					parent.location='lose.html';
+				}
+			}
+		</script>
+	</head>
+	<body class='background-green font-varela' id='id-selector'>
+		<h1>A New Currency</h1>
+		<p>
+			Congradulations! You invest 300k a month into ETH, and in 5 years your money quadrupled.
+		</p>
+		<p>
+			Do you plan to <b>liquidate</b> some of your net profit or <b><u>hold</u></b> the ETH?
+		
+		</p>
+		<div>
+			<label>Select:</label>
+			<br>
+			<input type="radio" id='option1' name='input-name' value='option1'>
+			<label>Sell 25%</label>
+			<br>
+			<input type="radio" id='option2' name='input-name' value='option2'>
+			<label>Sell 50%</label>
+			<br>
+			<input type="radio" id='option3' name='input-name' value='option3'>
+			<label><b>HOLD</b></label>
+			<br>
+			<input type="button" onClick="inputController()" value='Submit'>
+		</div>
+			
+	</body>
+</html>
