@@ -1,0 +1,62 @@
+
+/*Button customization*/
+a {
+	text-decoration: none;
+}
+a:hover{
+	color:red;
+}
+button:hover {
+	background-color: red;
+}
+
+/*Background*/
+
+.background-green{
+background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+
+}
+
+.bg-red{
+	background-color: rgb(255,0,0);
+}
+
+ul {
+	list-style-image: url(%F0%9F%92%B0);
+    list-style-position: inside;
+
+}
+li::before { content: '\01F4B0'; margin-left: -20px; margin-right: 10px; }
+
+/*Center img*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* font*/
+
+.font-varela{
+	font-family: 'Varela Round', sans-serif;
+}
+
+/* custom button */
+button{
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 60px;
+}
+
+#container{
+	text-align: center;
+}
+
+/*center text */
+#id-selector{
+	text-align: center;
+}
+
+
